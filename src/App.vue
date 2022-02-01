@@ -8,18 +8,13 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import Header from "@/components/UI/Header/Header.vue";
-import RecipeService from "@/services/RecipeService";
 
 @Options({
   components: {
     Header,
   },
 })
-export default class App extends Vue {
-  created() {
-    RecipeService();
-  }
-}
+export default class App extends Vue {}
 </script>
 
 <style lang="scss" scoped>

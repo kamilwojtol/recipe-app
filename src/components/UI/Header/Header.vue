@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <header class="header">
     <Logo />
-    <router-link to="/home">Home</router-link>
-    <router-link to="/about">About</router-link>
+    <nav class="navigation">
     <Button class="btn">
       <font-awesome-icon :icon="['far', 'user']"></font-awesome-icon>
     </Button>
     <Button class="btn">
       <font-awesome-icon :icon="['far', 'list-alt']"></font-awesome-icon>
     </Button>
-  </div>
+    </nav>
+  </header>
 </template>
 
 <script lang="ts">
@@ -27,6 +27,12 @@ export default class Header extends Vue {}
 </script>
 
 <style lang="scss" scoped>
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
 .btn {
   font-size: 32px;
   cursor: pointer;
